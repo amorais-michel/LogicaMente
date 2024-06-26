@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+    integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+    crossorigin="anonymous"></script>
+    <title>Valor Lógico</title>
+    
+</head>
+<body>
+
+    <div class = "topnav">
+        <a class="active" href="inicio.html">Home</a>
+        <a class = "sobre" href = "sobre.html">Sobre o Projeto</a>
+        <a class = "extra" href = "extras.html">Materiais Extras</a>
+
+    <div style="padding-left: 10px;">
+
+    </div>
+    
+    
+    </div>
+
+    <div class="sidenav">
+        <a  class = "active" href="">Assuntos</a>
+        <a href="definicoes.html">Definição de Lógica</a>
+        <a href="proposicoes.html">Proposições</a>
+        <a href="valorlogico.html">Valor lógico</a>
+        <a href="principios.html">Principios</a>
+        <a href="tipos.html">Tipos de Proposição e Conectivos Lógicos</a>
+        <a href="tabela.html">Tabela Verdade</a>
+        <a href="conjuncao.html">Conjunção</a>
+        <a href="disjuncao.html">Disjunção</a>
+        <a href="negacao.html">Negação</a>
+        <a href="disjuex.html">Disjunção Exclusiva</a>
+        <a href="condicional.html">Condicional</a>
+        <a href="condicoes.html">Condição Suficiente e Necessária</a>
+        
+    </div>
+
+    <div class = "container2">
+        <h1 id = "titulo">Valor Lógico</h1>
+        <button onclick="gerarPDF()">Obter Texto</button>
+        <div class="btn">
+            <button onclick="lerTexto()">Ouvir Texto</button>
+            <div>
+
+            </div>
+            <hr/>
+                
+           
+         </div>
+        <p1 id = "paragrafo1">
+        <br>Toda proposição tem um valor lógico, ou seja, um valor que vai dizer se
+        essa proposição é verdadeira ou falsa.<br>
+        <br>
+        <br> Para representar o valor lógico de qualquer proposição, usamos as letras
+        V para verdadeiro, e F para falso. Além disso, há outra notação muito usada na computação, onde usamos 0 para falso, e 1 para verdadeiro  Confira os exemplos:<br>
+        <br>
+        <br>Exemplo: <br>
+        <br>
+        <br> a) O céu é azul. (V)<br>
+        b) Rio Grande do Sul é um estado. (V)<br>
+        c) 3 + 3 = 10 (F)<br>
+        d) 1 + 1 = 2 (V)<br>
+        e) A raiz de 16 é 4 (V)<br>
+        f) No vácuo, a luz pode chegar a velocidade de 299.792.458 metros por segundo (V)<br>
+        g) Só existem passáros vermelhos (F)<br>
+        h) 7 + 7 é 21 (F)<br>
+        i) A página onde esse texto está escrito é amarelo (F)<br>
+
+        <br>
+        <br>   
+        <br> No exemplo a, é nitido que o céu é azul, então podemos dizer que essa
+        proposição é verdadeira.<br>
+        <br>
+        No exemplo b, sabemos que o Rio Grande do Sul é um estado, então
+        também podemos dizer que essa proposição é verdadeira.<br>
+        <br>
+        No exemplo c, as coisas mudam, pois 3 + 3 não é 10, e sim 6. Logo, essa
+        proposição é falsa.<br>
+        <br>
+        No exemplo d, sabemos intuitivamente que 1 + 1 é 2, então podemos
+        marcar essa proposição como verdadeira.<br>
+        <br>
+        No exemplo e, a mesma coisa. Se tirarmos a raiz do numero 16, podemos
+        ver que resulta em 4. Então essa proposição é verdadeira.<br>
+        <br>
+        Quanto ao exemplo f, não se acanhe, se você não entende muito de fisica,
+        fique a vontade para pesquisar o valor da velocidade da luz no vácuo, no
+        Google, Tu vai notar que o valor que aparece na tua pesquisa é o mesmo
+        que aparece no exemplo desse material, assim, podemos dizer que essa
+        proposição é verdadeira.<br>
+        <br>
+        No exemplo g, sabemos que não existem passáros que só tem cor
+        vermelha, existem passáros de cor azul, verde, etc. Logo, essa proposição é
+        falsa.<br>
+        <br>
+        Já no exemplo h, se somarmos, vamos ver que 7 + 7 não é 21, mas sim
+        14. Então podemos dizer que essa proposição é falsa.<br>
+        <br>
+        Por fim, no exemplo i, dependendo de onde tu tá lendo esse texto, é
+        provavél que a página não esteja na cor amarela, mas sim na cor branca ou
+        preta, ou qualquer  outra. Em todo caso, podemos dizer que essa proposição
+        é falsa.<br>
+        <br>
+      
+        
+        
+        
+    </p1>
+     
+        
+    </div>
+    
+    
+
+    </div>
+    
+
+     <script src="leitor.js"></script>
+
+     
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+    <script>
+        function gerarPDF() {
+    // chamando a  jsPDF
+    const doc = new jsPDF();
+
+    doc.setFont("times new roman");
+    doc.setFontSize(20);
+    doc.text(80, 20, "Valor Lógico");
+
+    doc.setFont("Arial");
+    doc.setFontSize(10);
+    doc.text(30, 40, "Toda proposição tem um valor lógico, ou seja, um valor que vai dizer se essa proposição é verdadeira ou falsa. ");
+    doc.text(30,45, "Para representar o valor lógico de qualquer proposição usamos as letras V para verdadeiro, e F para falso.");
+    doc.text(30,50, "Além disso, há outra notação muito usada na computação onde usamos 0 para falso, e 1 para verdadeiro");
+   
+
+    doc.text(30,70, "Exemplo:" );
+
+    doc.text(30,80, "a) O céu é azul. (V)" );
+    doc.text(30,85, "b) Rio Grande do Sul é um estado. (V)");
+    doc.text(30,90, "c) 3 + 3 = 10 (F)");
+    doc.text(30,95, "d) 1 + 1 = 2 (V)");
+    doc.text(30,100, "e) A raiz de 16 é 4 (V)" );
+    doc.text(30,105, "f) No vácuo, a luz pode chegar a velocidade de 299.792.458 metros por segundo (V)");
+    doc.text(30,110, "g)Só existem passáros vermelhos (F)");
+    doc.text(30,115, "h) 7 + 7 é 21 (F)");
+    doc.text(30,120, "i) A página onde esse texto está escrito é amarelo (F)" );
+
+    doc.text(30,130, "No exemplo a, é nitido que o céu é azul, então podemos dizer que essa proposição é verdadeira.");
+    doc.text(30,140, "No exemplo b, sabemos que o Rio Grande do Sul é um estado, então também podemos dizer que essa proposição  ");
+    doc.text(30,145, "é verdadeira.");
+
+    doc.text(30,155, "No exemplo c, as coisas mudam, pois 3 + 3 não é 10, e sim 6. Logo, essa proposição é falsa.");
+    doc.text(30,170, "No exemplo d, sabemos intuitivamente que 1 + 1 é 2, então podemos marcar essa proposição como verdadeira.");
+    doc.text(30,180, "No exemplo e, a mesma coisa. Se tirarmos a raiz do numero 16, podemos ver que resulta em 4. Então essa proposição ");
+    doc.text(30,185, "é verdadeira.");
+
+    doc.text(30,200, "No exemplo g, sabemos que não existem passáros que só tem cor vermelha, existem passáros de cor azul, verde, etc.  ");
+    doc.text(30,205, "Logo, essa proposição é falsa.");
+    doc.text(30,220, "Já no exemplo h, se somarmos, vamos ver que 7 + 7 não é 21, mas sim 14. Então podemos dizer que essa proposição é falsa.");
+    doc.text(30,230, "Por fim, no exemplo i, dependendo de onde tu tá lendo esse texto, é provavél que a página não esteja na cor amarela, mas sim ");
+    doc.text(30,235, "a cor branca ou preta, ou qualquer outra. Em todo caso, podemos dizer que essa proposição é falsa.");
+
+    
+
+    //gerando o pdf
+                        
+    doc.save("Valor Lógico.pdf");
+}
+
+    
+    </script>
+    
+</body>
+</html>

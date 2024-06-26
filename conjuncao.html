@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+    integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+    crossorigin="anonymous"></script>
+    <title>Conjunção</title>
+    
+</head>
+<body>
+
+    <div class = "topnav">
+        <a class="active" href="inicio.html">Home</a>
+        <a class = "sobre" href = "sobre.html">Sobre o Projeto</a>
+        <a class = "extra" href = "extras.html">Materiais Extras</a>
+
+    <div style="padding-left: 10px;">
+
+    </div>
+    
+    
+    </div>
+
+    <div class="sidenav">
+        <a  class = "active" href="">Assuntos</a>
+        <a href="definicoes.html">Definição de Lógica</a>
+        <a href="proposicoes.html">Proposições</a>
+        <a href="valorlogico.html">Valor lógico</a>
+        <a href="principios.html">Principios</a>
+        <a href="tipos.html">Tipos de Proposição e Conectivos Lógicos</a>
+        <a href="tabela.html">Tabela Verdade</a>
+        <a href="conjuncao.html">Conjunção</a>
+        <a href="disjuncao.html">Disjunção</a>
+        <a href="negacao.html">Negação</a>
+        <a href="disjuex.html">Disjunção Exclusiva</a>
+        <a href="condicional.html">Condicional</a>
+        <a href="condicoes.html">Condição Suficiente e Necessária</a>
+          
+    </div>
+
+    <div class = "container2">
+        <h1 id = "titulo">Conjunção</h1>
+        
+        <button onclick="gerarPDF()">Obter Texto</button>
+        <div class="btn">
+            <button onclick="lerTexto()">Ouvir Texto</button>
+            <div>
+
+            </div>
+            
+                
+            <hr/>
+         </div>
+        <p1 id = "paragrafo1">
+        <br>Conjunção é a união de duas ou mais proposições.
+        Podemos pensar na conjunção, como dizer que vai fazer algo e vai
+        fazer outra coisa.<br>
+        <br>
+        <br>Usamos o símbolo ^ (circunflexo) para representar uma
+        conjunção, além disso, lemos uma proposição que é uma conjunção da seguinte forma: p e q. <br> 
+
+        <br> Usamos a palavra "e" para representar a conjunção<br>
+        <br>
+        
+        
+        Numa conjunção, só vamos ter um valor lógico
+        verdadeiro, quando as proposições p e q forem
+        verdadeiras, de resto tudo é falso.<br>
+        <br>
+     
+        <div class="tabela">
+            
+            <img src="n.jpeg" width="250" height="250" alt="tabela" id="tabela"/> 
+            
+        
+        </div>
+        <hr/>
+
+
+        <br>
+    
+        <br>
+        <br> Exemplos:<br>
+        <br>
+
+      <br>  a) Vou para a escola e vou estudar matemática. P: p e q <br>
+        <br>
+
+        <br> Onde:<br>
+
+        <br>
+        <br>Vou para a escola, é a proposição p <br>
+        <br>
+        e, é o conectivo da conjunção <br>
+        <br>
+        vou estudar matemática, é a proposição q <br>
+
+        <br>
+        <br>
+        Nesse exemplo, tu tá afirmando que vai pra escola e vai estudar matemática.
+        ‘Vou para a escola” é a nossa proposição p, a letra “e” é o nosso conectivo lógico
+        da conjunção, além disso, “vou estudar matemática” é a nossa proposição q.
+        Podemos representar essa proposição como P: p e q, ou ainda se preferir P: p ^
+        q. <br>
+        <br>
+
+        <br>
+
+        <br>b) P: 10 é um número par e 10 é divisível por 5. P: p e q<br>
+        <br>
+
+        <br> Onde:<br>
+
+        <br>
+        <br>10 é um número par, é a proposição p <br>
+        <br>
+        e, é o conectivo da conjunção <br>
+        <br>
+        10 é divisível por 5, é a proposição q <br>
+
+        <br>
+<br> Nesse exemplo, temos uma proposição composta P, e estamos dizendo
+que 10 é um numero par (algo verdadeiro, representado por p) e que 10 também
+é divisivel por 5 (outra verdade, representada por q). Podemos representar essa
+proposição por P: p e q. <br>
+
+<br>
+
+
+
+<br>c) Q: Tenho 50 centavos, vou comprar uma bala de 25 centavos e um pirulito
+de 25 centavos. Q: r e s
+
+
+
+<br>
+
+<br>
+<br> Nesse exemplo, temos uma proposição Q, e estamos dizendo que temos
+50 centavos e que vamos comprar uma bala de 25 centavos (r) e um pirulito de
+25 centavos (s). Podemos  representar essa proposição como Q: r e s.<br>
+
+<br>
+<br>
+<hr/>
+<br> Caso 1: Considerando que eu fui trabalhar e depois fui para
+faculdade, então eu falei a verdade, pois eu fiz as duas coisas . Note que nossa
+proposição p (vou trabalhar) é verdadeira, assim como, nossa proposição q (vou
+pra faculdade) é verdadeira. Portanto, concluimos que quando temos duas
+proposições, uma p e outra q, e elas são verdadeiras,  vamos ter um resultado
+verdadeiro.<br>
+
+
+<div class="tabela">
+            
+    <img src="c1.png" width="130" height="125" alt="tabela" id="tabela"/> 
+    
+<br>
+</div>
+
+<br>
+<br>
+
+
+<br>Caso 2: Considerando que eu fui trabalhar (p = verdade), mas
+não fui para faculdade (q = falso). Isso significa que eu menti.
+Pois, eu disse que ia fazer as duas coisas, disse que ia 
+trabalhar e ia para faculdade, mas não fiz. Assim, quando
+temos duas proposições p e q, e uma delas é verdadeira, mas
+outra é falsa, então vamos ter um resultado falso.
+
+<div class="tabela">
+            
+    <img src="c2.png" width="130" height="125" alt="tabela" id="tabela"/> 
+    
+<br>
+</div>
+
+<br>
+<br>
+
+<br>Caso 3: Agora, considerando que eu não fui trabalhar (p = falso),
+mas fui para a faculdade (q = verdadeiro), isso significa que eu
+menti. Pois novamente, eu não fiz as duas coisas. Assim, quando
+temos duas proposições p e q, e uma delas é verdadeira, mas
+outra é falsa, então vamos ter um resultado falso.
+
+<div class="tabela">
+            
+    <img src="c3.png" width="130" height="125" alt="tabela" id="tabela"/> 
+    
+<br>
+</div>
+
+<br>
+<br>
+<br>Caso 4: Por fim, considerando que eu não fui trabalhar (p = falso)
+e também não fui pra faculdade (q = falso), significa que eu menti.
+Isso porque, eu não fiz nenhuma das duas coisas. Portanto,
+concluímos que quando temos duas proposições p e q, e as duas
+são falsas, temos um resultado falso.<br>
+
+<br>
+
+
+<div class="tabela">
+            
+    <img src="c4.png" width="230" height="230" alt="tabela" id="tabela"/> 
+    
+<br>
+</div>
+
+<hr/>
+        
+
+    </p1>
+     
+        
+    </div>
+    
+    
+
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+
+     <script src="leitor.js"></script>
+
+    
+
+    <script>
+        function gerarPDF() {
+    // chamando a  jsPDF
+    const doc = new jsPDF();
+
+    doc.setFont("times new roman");
+    doc.setFontSize(20);
+    doc.text(80, 20, "Conjunção");
+
+    doc.setFont("Arial");
+    doc.setFontSize(10);
+    doc.text(30, 40, "Conjunção é a união de duas ou mais proposições. ");
+    doc.text(30,50, "Podemos pensar na conjunção, como dizer que vai fazer algo e vai fazer outra coisa.");
+    doc.text(30,60, "Usamos o símbolo ^ para representar uma conjunção, além disso, chamados de p e q.");
+   
+
+
+    const imgData2 = "/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAB2AKYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3Lwr/AMEzPB83hrT5I/FXxFtfMtYXaK21nYmSucgBRj86uXH/AATA8F3cRW48XfE6RVBYK+tM3IB6ZB5r6E8GRD/hGtPXcD/oVvgH/cq4n7m7w3lr/eDDjB44596+rhh4ezTcdfQ/Pa2Y1XVavofKOsf8E3Pg7peorZah498XR3rEgW0/iJEkDYyBjGcnNaUn/BJT4aFBu1rx6wblCNX8xXGByPlx3r4S/aF+FOvfGb9uT4taP4Z8K6p4u1yS8K2a2eoNGdHdWiAmbr+7wSD0wWHWv1N/ZR8B698JP2dvCmgeJrg3HiDT7MR3rZL7XznG4nr2/CuSjaUmnH8DuxU5U4Rk57njkf8AwST+GqPzrHjhf7rHUxwev9z6ivHPCn7Anhm3/bx1z4c2/ibxzb+HbPwvDqsbR6qUm8/z/L+8qg7SGPHrj0r9BJem75t3PX6GvmzwnKzf8FYfFCtyP+EGiPT/AKe1raeHitXEyweaVOWS3J5P+CZPg21T5fGHxL2oNzMNekOBg9sVU8Rf8E4PAeg2f2nUviB8QNOtYzteS48SGIBuMgZ64BBzX0lHOBasyrJJkEbVGS+P4fx6Z7e9fBH/AAUmWDx//wAFA/hT4F8Y6o2n/Di6tRNeSSXBgtp5C0yuzPkDjYg7/e9qitRjThz8osDXxGKqOLlZHsPh/wD4J3/DnxRpH23SfiJ8QdTtt5USWviQyjAYLzjpwSfwq2n/AATH8FyP5c3jL4nKrOM416Tpnjt7frXhX7MOm+GfhJ/wVtm8JfB2+k1L4e32l+ZqCQXTXNtbv5ZzhicHDhBkAfer9AD5iKvo7hcsc55Aq8N7OrDYnMK+IwckpTuj4J/al/Y40v4Q/Fb4M6Vovi3x99j8ZeK10q9ln1uRyY22twOPmGRznsfXj21f+CYng/T4BCvjb4pNswm4+IXLcKD/AHeB83T2qH9u0Cf42fszLt2/8V5Ex5zn5UH9K+jtUJW8Xg/NITwf9hKdHCw5tbE4rMKsKaknufOc3/BMvwfLHiTxp8U254X+33OT+VZviP8A4J8fDTwVHC+r/Ejx7pK3GfI+2eKPJaXBAOA3oSO9fTWo27GGRgrMFUNyfu4YH+mPxr87/wDgthDp6/GT4LjWNPvdZ0lZLh7u0ti/mXSGeLEaY6tkjnHrxSrRpQV0tS8DisRXmqTdrn0Jov8AwTq8C67ZJcad8QfiNfWr5Bms/EvmKp7DIz15/KrEn/BMjwfewsr+NPilIq8/P4gfAP5Vwv8AwSD+Ffir4ffD/wAd6rrlhfaD4T1bUY5tA0zUXPn2sPJZmJwcKGx0549a9ku/jT4gTX28WQxWbfDezvG025Tyj58q5wbof7IIxj/aHNVQw6qL2nL+AsViMTRnyRqXOPg/4Jd+DbNWkXxh8UI1jTdI48QMqp+J4x6n0rN8M/shfC/W9cl0rSfjH43uNSh+V7e38WgyZwSRxzjOMHv7Yp3/AAWD+KOsfD39hm4uvDcjxjXr+3s5byBmBgtHDsXyPuk7QDnsSM818p/tlfsq+B/2Vf2XPhb8S/h/rlxD4uvLi2aWWK6Ez6j5wLMxVTn5WVVCknhia5cRKMZWcfwPRwuHr1oc06h9oyf8E6/D+1t/j/4ubkco6/8ACTSDacA+nvTP+Hd3h1QdvxA+L6HHVPFMqn/0GvcPCWoNrGhafezqkd5d6fbTTKCcljEu4n0Oe1aSPujztHpXbRwcJQu1ueNLH16blFPY+D/29v2aZvgP8IdJ1Xw98T/iqt1datHauLzX2uUEZhnY4V1IzlF569fWivRv+CtLyD9nrQTGqsf+EghGC23/AJdrrvRXl1sPFTaR7WFxVSVNSbPpbwYkcnh/Ty08aqtpblTu6nyx6Z9a0NRkNxOuyazcr235PQ8kYr5R0P8A4Jy/Bu/0XTXk8J3nmi1jdmGuaim4siE5Anx19q0o/wDgnN8GfMCL4PuVZgRuGv6lk4BP/Px7V+df8RgyujJ01Cbs7bn01Twzr1VzOdnue3eDPgf4L+HvxO17xdo+k6dZeIvEaj+0btXbfMPlzzxjJVT+FdYtwJzua4hI3cfMf8K+VrL/AIJ3/A/U4JJYfDM0kaIzvKviPUCqbVJYEi4wMYwfTNT6f/wTt+CVxYQzW/hWa4gmAZZU8SaiVbjsfP5/rU/8RiyuOvs56lVPDXEySUp7bH1RdTw/e+0QcA8BxycHHXFfNPhN1X/grR4o/fQr/wAURGhJcMpxdpnkEjgkVnn/AIJsfBdrjzB4VvAoBAJ13UCMn5e856Zz+FeUaR+wp8L9V/be1rw7c+Hb7+x4fB0OoW9udVu02SG7KFvMWUOeM8E4+bpkA1pR8VcsxHNNQneK5rX6Gn/EPK1JJKW598TSNERHHPFGSSMI/v2OK4r40/s/eBf2h9MtdP8AG2i6TrtvasTEJYzugJyTtYcjkk/jXjL/APBOH4NQxHb4RupEX5sNr2pNsx3/AOPj/Oar3n/BPP4IwX8dtJ4fnhkuGKxp/wAJHqH74jB+RftGSf6ZrOXjBlclZwn+ZEfDfFU5qpCZsaN/wTA+G/gH4teH/GXgbVNa8FanobIJoLC7P2e+iBJaN1I6Mdvc4296+i7lI7q7Um7hJaRcZY/3u2B/nFfKs/8AwTt+B66o0L+GbiO7mXzFgPiTUTIF6Z2/aM4PrV2D/gnB8F4pNr+EbplI5DeINT69QOLgVNHxkyulJxjCfzSsOt4b4nEaznqO/bsvo7P44/s0gOm5fHKF9zYVAAmMnBAz74r6b1SNZ7pWW5t/LbDoxcEtuROwJ4H1r4K/aE/Ye+Fvg34kfB+y03Qbywh8QeL4dOv4l1e8l8+EJuIUySsUyYlORzx1r1RP+CbPwUtLbbF4XvBGwU7P7e1BQhC7ccT8n5c9uvStn4sZdhoKsoO072tvpva5NTw5r1I+yctUfUkknl221Zrd29c/0ryv47/sk+Hv2gfij4D8YaxqmoQ3vw9uzdadDBMPKZiythhjkfL+teXp/wAE5fgvs2nwnqDe41/UgP8A0fTl/wCCb3wXVP8AkU7xvZvEGpH/ANuK55eMmUyXvxn9yNafhviKcuZT6H1Bqaxa7bzRzNFMs6hZBL82flwQMYwCQDjHaqtrpNkmjf2ZNHp7WKwmH7Mp/dlT1+XHrg/hXzQf+CcnwXt0+bwldKrEBiviDUgQO/8Ay8VDpv8AwTq+CdxcSxWvhe4neJ/IlVPEWos0UvZG/wBI4zlTz6+1VHxjyyLtGEyF4Z1ql5Tqan0N8R/hh4f+Mfw1u/BuuWtpdaBqFuLaWFUVjGAD867gQCPXBx+Nfnv+1B/wSl1D9l7w14f8bfDHUNe+IF3oWrQS/wBgX8aXGy3Eoc7AgAUDaF+4fvfgfoGD/gnd8EdWhk+y+HpJlWQpmPxFqLZxwelx65HXtU3/AA7b+Csaj/ij7n5eh/t/Usg/jPWdbxcyp6yhM9DD8CYvDrlUro+mPD+rS+INFsdTvLZNNur61jnltmjMbQM6gmMjH8OMe/oKtT3McKbjLH9N3/1q+V2/4Jo/BpZPOPhO83t1Zde1EE/X9/Uq/wDBNr4NS3Ct/wAIpfKuOQ2v6kc/+TFVHxmyu3K4S+bPPreGlepJycrXK3/BW5kb9nXw/umgXd4hhIG/t9muvaivG/2+f2J/hx8Jfg5puqeGtDutN1KTWYrR521W7uQYWgncpsmldR8yIcgZ4xnBNFe1heN8Ji6SxFKGjD/U+tQ/dOex9peFnz4d0/LNj7JAADzz5S1ccZLJ97dglB0YAgkZ7dKy/DOrWUPh+xBvLQr9khG4yqAcRr3zVyLWdPUArqFiqZ+b/SE6fnX8u4vCYiOIqfu23zX2Z+yUcRT5VJSW3c+Ivid421H9mvxF8UPhPpkkkNx8SLuK58IBmd1UXbrHdDdzgqGOBn8q+x/hr4Jt/hp4B0bw7a7THo9pHaEvlmcouGJJPrmptU0Lw7q2s2eoXFro819Y/wDHvdSeU8ka7gwCsTxyK0v7Ut3I23Vo7MdzsZ03E5JznPv0r0MyxVXE0Y0o0Wmt9Hq++xnRhCnJy507+exYYgSAYO0fMVzxxz/SvE9EQj/go1ri7nYjwDbgEngA38nb/gP617QNQtZGb/S7XcwKhfOU84Poa8R0u5iT/golrDC8tGWTwPBHuSZWAZbx2KnnAPz469qMow9ZQqz5JW9m1s97ojFVIKSXMvvPcpTuKLnsef7nGM/rXg//AAUB0K60D4b6H8S9FjkbWvhnq0WpmOIkPdWRDRzoxHBAV933T92vck1SzA+a8s923kCdWJz7A/rUep2tjr+mXNldfZbizvIHglR3BVlYEEEfjXPl0K9DERqypyaT2szWpOEocvMvvPCv2V9Tt/2hvjh8RPi5bs02h300fh7w7JgoJLW2ALygE/xuRkY42dTnj6B8syKzZXp3OOfWs7QNO0bwdpEenaTb6dp9jCT5VtagRxxZJJwPfjP0q81/bRRKWurWNSwDNI4AAPHrU5rOriMQ6kKTiraaPRdtisPUp01yuS+88K/a43L8Y/gHIqsdvjkDOOP9RNXuqOFWQlom/eY29T0HP+fWvCP2vbyA/Fj4Cu9xZxpJ44QbJJ1O3dBIQ/BxjnGSR1969wGsWKxjfeWvmbjuQSrtXsCGzg/hXVmGDrxwlBOD0Uuj67GNKtTdeUlJW9SyPnfG3jGevFNkTyfm/DrUD61ZO3zXloq/9d0/xprX9m0O5b6x64/4+U/xrwXh6619nL7mdftoLW6+9FqSLchHynK556V8l/H/AOJ//DF37RHizU1FxJpfxS0CR7BF3YGsqojUA843AscYH3K+rRqlnOw3XdntUcgXKc/r64rO8WeHPDfjB7RtWt9G1A2kqzW/2lo5PIkAPzLzweTXtZNUq4SrKc6Lkmv5Xp+BzVeSa+JL5nL/ALKnwp/4VB8BfDuisF+3eQtzfvIx3edKPMYckk4LHvXoRXBZflY9OD+tQSXlnIiq11ZhVyQfPTOePf2pkurWceP9PsUAGP8AXJz+tebiKOInWlNU5Wfk/wDI2jUpxio8yfzLBDd2O3GMCpNoSMSZb0wTVFNds403Nf2TK3yj9+v+NE2t2flY+22eOuROn+NYfVa//PuX3P8AyKdSHdfeeC/8FJoxc/AnS1b5R/b8Jz/273NFVf8AgpfrdnZ/s9aPNLeWscbeIIVDeapyfs1z2B9qK/XeGqNSOXU1KLT9H3Pl8fWg67aZ9geFf+CV37PcXhmxV/hP4VaT7Om6QwtuclRkk5zyRmrq/wDBK/8AZ3RVWT4T+FGTdk5gY4/8fFe7+Hn+0aNaH7o8lMfkKvbGjG5G+ZSp+4G6MOxr90lhcO439mr97H5xPEVHs3p5nzTov/BPT9lvxToEupab4D+Hl9p1o80U9zBNvgtjFzIrNv4K45z0q94X/wCCa37NnijR7fVNK+GfgrULC8QPDcW6tJHKvqCH5HvXxf8AHjVfEH7IXxa+M/7P/hu3udn7QWo2l/4T+z2rSW+n/bpDHqG6TGI8KS2OPw61+mvwZ+FGn/A74U+HfCOlRrHp/hmxTTYVUhuIlCk7sZbcwY598c9axjh6d9IR+4SxFW+7+88kuv8AglZ+zzcxsrfCXwmQ2f8Alg2RwemW/WvnDQf+CfPwZuP+Cr2u+Ev+Ff6D/wAIvb/Dy11OLTfLbyUuGvXj8z72S21W/wC+zX6IMcD9K+TvCyuv/BafxJuHy/8ACrLMD/wZSj+tbLCwjpGMdd9CVVqSd5SZ2j/8EqP2dZQN3wj8In5Rybdj/NqzfF3/AATx/Zh+G/h6bVtd+HPw/wBF0mzA8+7vVWGKMEgD5mYDOSOM19J5wn6flXyF/wAF0oJJ/wDgmP8AEJY4/OkaXTQsYQvv/wCJhbjGF5xjrjtml9TprXlj9xp7af8AMzX+Hn7D37JPxhiupPCvgr4Z+JI7Eqtw+mSJcCBzn5W2scHiunX/AIJa/s9KVx8J/CeGZQcW5B6jvmtD9iD4Z+LPhx8M2h8WaL8NdFuLjyns18HWjW8dxb+WpR7gEczc8nPrx6e3IN7KPRlP6inHC0WtYxv6EutUtpJn5z/t1f8ABPP4L+CPjV+zpDo/w78P2Nv4g8eQ2GoQJG3l3cJt3cqw3Z+9GvQjpX0pN/wSt/Z5uJFY/CXwivlqFT/R2+UegO7OOO+a5P8A4KMo0fxs/ZhZeTH8RY5Meu2xnOPxxX1cR5bsu7JViuMelRTwcL6pP5bBKpNaxkzwOH/glt+zzAOPhL4T+vkv/wDFUw/8Er/2eGBz8JfCrZOeYnx/6FXv9FbLB0esI/cH1ir3f3nz+v8AwSs/Z3z/AMkl8IqvG4+Q/Az/AL1cn8Rv2L/2P/hNeWcfizwn8MfDMt5EZII9SuPs5kUE5I3OM9O3NfViKrTxbt23eufTrjn2r87/ANvnwB4q8ff8FWvhRa+FdK8F6zqcfg7UJPI8T2z3GlgbgMthSAwyMcdzzS+q007KEbegfWKvd/efRPh//gm5+zZ4p0m31DS/hj4I1DT7yMSW9xCPNinU/wASFZDke/vVmb/gln+zzOMN8JfCI/3YHH/s1ezfD3SrjQPBGl6fd2+lWl1Z2sSTQ6chjtEkKDf5K9owfb0rYo+qUv5I/cP21TpJnz+P+CV37PO0K3wp8KsAc/6lv/iqc3/BLP8AZ5LL/wAWn8JsAehhf/4qvfqD1qo4Sivsx+4X1istVJ/efmr/AMFZv+CfXwV+E3wO0XVfD/w/0zR72616G2eSxkaFjGbe5Yqc7uCVU/gKK9g/4LZf8m1eG/8AsZYO+P8Al1u6KxhTpxVrL7jRVqj1cj2jw/8Att/ByHQLFZPip8PYXjgQOr6/aq4baOCrOCKuw/tv/BxZM/8AC1vh4BjgjxFacHt/y0rH8OfsD/Be48PWDTfC/wABzS+QoeR9CtmaQhRySyE859a1YP2D/grCf+SV+AcL1/4p+0OB3/5Z1pHnaOfYr3H7YXwH1PVobuX4lfC+a9swPKnk12x8yPgg4YvkcnOKvD9t74NJGi/8LY+G+1RtH/FR2hP/AKMryf4o6J+x18F/Gkfh3xZpXwS8O+ILiJJ0sNQ06whnZXzs42fxY4BwfavS7P8AYZ+Bup2kNxb/AAs+Hk1vOokikTw/aFHUgEEMIyOc+tEb9ANEftsfBsj/AJKt8OOhxnxHadev9+vmDw7+1b8Mx/wV28QeID8RPBP9gzfDe0sk1D+27YWpnF+7+V5hfG/BY47hCa+lW/YU+Csa8/Cr4e45AzoFpwcf9c6+X/Dn7IPwrf8A4K8+IPDv/CvvBp0OH4bWl6mn/wBj2xtVn+3uhl8sx434DDPYORU++pK4H1U37bfwbERJ+K3w5GCf+ZjtP/jlVdU/bD+CPiHTntbr4nfDO8t5cFopddspEOCCMhpMcEA04/sIfBUQN/xan4f9yceH7QnHf/ln2GT+Fcz4l/Zu/Zv8G+OvDfhXVPA3wss/EXiyWWHR7CTRbRZdQeMAsEzGAcbl4z39q2le2oHXH9tb4Nw7tvxU+HqIxBw/iS064x/z0x+nFIP23vg3H8w+K3w6baQTjxHaYHPf9507fjXLJ+zP+zfN8R/+EQXwH8MW8Tf2emrf2b/YVqLhbR3KLKVMeQu8FfTOOea6A/sDfBWRcH4U/Dsq3ykf2DaEdR1Hl8+v4URvugPnH9v39qL4aeJvjR+zfNp3xC8G3tvpPj5Li/lg1i3kSyh+yzRGSUh/lQM6888kDvmvpib9tr4MtcySf8LW+HarIxdSfENoAwP935+R718r/t//ALIHww8K/Gv9m+PS/h/4P0+31bx8lvfw2+kQRrfQ/ZZpjHKNuGQsi8ccqD2xX1Af2EvgyjFW+FXw/KqWRQdAtSEA7L+74HtUU73YEw/bc+Dbthfit8OW7/8AIx2n/wAcoP7bfwZUc/Ff4c/+FHZ//HKrH9g/4K5/5JT8PD9fD1p/8RSr+wd8E1+78Jvh2reo8PWv/wARWtpAWB+2/wDBhQxPxY+HXA4/4qK06/8AfyqzftifA+bU4NQf4nfDN72CJoY7ka/ZieND1UN5mQDTj+wh8FTG3/Fqfh6TgAD/AIR+0ySSBx+7rzr40fD79k39ny9tLPxx4f8Ag34ZuLyPzbaDUtJtIZJhyCQPKPp0qHK24Hpg/bd+DSlmb4sfDwKcdfENpzjj/np1oP7bvwZ4x8Wfhz0zz4itB/7UrF8Jfscfs/8Ajjw5a6tovw0+G2oabqEQlt7qDQrNo50P8SnZyPwrSP7CPwV4x8Kfh70xz4ftP/jdNXewEw/bi+C5bH/C2vhxn28RWn/xypE/bY+Dch4+K3w7OBnjxFaf/HKpj9gz4Jhs/wDCp/h5n1Hh+0/+N09f2Efgqc7vhT8PWXHT/hH7X/43TtIUtj5a/wCCun7THwz+I37Pvh+z0X4geDtXuovEEMzwWOqwXUioLa5BYrG5IUFlGcYyQO4oqn/wV5/ZI+Fvw+/Z48P3mhfD7wjot3J4hhhefT9LhtZWjNtdEoWRQSpKqcdMqD2ormlF3LjsffHhU7/DWnt/et43+m5Eb9M1fP3l+Uk54IONvqc9uM14X4O/4KBfBODwtpcc3xT8DwyCyh3pJqaI0bCNVwc4Hb1rTf8A4KEfAxV+b4sfD8qezaxFg/XmuiMlZES1dz5quPh1468Sf8FjfiVeeE9S8P6HFD4U043E2u6LNqUF3GzrlYwJ4wGGB8wY4/u9x9526lIl8wrJcMqmV0X5GYAA7c5YDI4GTj3rxn/h4F8B452mHxW+HqyMAGaPVoAzD0z1x6DPFTH/AIKG/Avt8WvAW30OsRf41FOSuxnsbdOin6ivkzwurf8AD67xMxZdv/Cq7PgLjrqcleoD/goX8DXOB8WvAPQ/8xmHng9Oa+X/AA9+218JYf8Agrx4g8RH4ieEf7Am+GtpYpqB1OIQNOL95PK3bvvYLceiE0pTTkrAfoMwzH3zk4IPT1/MZH418o/8Fffhdq3iL9nTS/iJ4VtBN42+Desw+K9MaONfPliRsXMCseQrRsXIGSTEB349Jb/god8Ddq/8XY8Brxuy2sQjr+NQzf8ABQz4E3UbxH4tfD9gylWU6xEcgjHPze/Q1tKSasgPJv8AgmXe/wDDTvxD+JH7R19p95Zr4+vk0nwxb3yBZbLSbMY2qpAdFeZi208ZA5PFfYiPiRDgfeGcd+RXisP/AAUF+A1om2L4rfD6FOSEXV4ljQkkkIoOFByOMdutP/4eI/AkMv8AxdzwB94YA1ePk5qIyUdGB5x/wUUlz8cP2Yf+yhD/ANN1zX1hcDMzndn52OMepr4C/bv/AG0fhL4l+Nn7Odxp/wAQfCeoWej+OjdX09vqUMiWkItJoTK/zZChnXn1YCvpV/8Agot8B7mRmj+Lnw/b5s5TWoiOeR1IPf0qKVSPMwPZKK8aP/BQ/wCBY6/FrwF/4OIv8aB/wUR+BOP+St+Av/BvF/jXRzID2UBi67W28569cc/j+lfC/wC1x4B8W+Lf+CsPwx/4RW80TR9Sh8H38hutb0N9U01EEkXytEske5yzLjLjAB619CJ/wUS+BSkbfi34B3MP+gvF/jUMX/BQT4D27rIPix8P/MTKq51aEsoPUBs5APpmueom3oB6t4K0++0vwnY2+qXlhfalbwpDcS2Vu9rbM4GWMULMwjUk/d3NjHWtSvG2/wCCh/wLWJc/FnwGqqTg/wBsxHOfx9qa3/BRL4FKRn4teAgrHGf7Xi/xrSEktGB7NRnBrxlf+CiHwLYZ/wCFs+A8Zxxq8X+NB/4KIfAvI/4u14BXJwN2sRDP61pzIUtjyH/gtOk0n7NfhxYYxI3/AAkkBILbePst3RXmH/BXj9s34W/Eb9nzQLPwz4+8M69fQ+IYpZINOv0nkSMW9ypchTnbllGfUj1ormlJXLjsfYfg/wDZM+GMHhjTVb4f+C2dbOEMx0S2bedvUhkbnitGT9lT4YEc/D3wSeRx/YFkSfoPK6113hKbzvDOntjG60h/9AB/9m/Sr8nT5iyq3BKjkVryqyZL03PlL4zfGP8AZT+AXxXXwP4o0HwfaeKvLjlbT7XwYl3IokyI8+VbMBnGecAevTPtdn+yz8L7yzjmT4e+CjHMvmRv/wAI/ZgMpJA4aEEHA5BHFfJPiH4C/ET4gf8ABXT4iah4b8Vax8PdN/4RTTo21OLRY7+HUl81S0KvP8qN8oOVy2Aegzn74iiaJf3j+dJtUPKygO7c5Py4AznOAO1Z046u4HBxfsq/DOFtyfD7wSGwRn+wbQY4/wBmMGvl3Qf2cvh/J/wV817RT4K8K/2Svw1trxbI6VA9uJvt7oZPLZSu7APIGQGIr7g57DNfJ3hufd/wWr8RR7f9X8LLXnPX/iZyVUoxUlcD3E/smfC8BSPh34H+6B/yL9n/APGq5H44fD34Dfs2fDLU/GnjLwd4H0Xw3o6o17enwzbzCAO6opKxwM3Lso6d69wP3P0/KvlH/gtd4M1T4g/8E3/Hej6JYanqWq3k2m/ZrfT7b7ROzLqFu5ZVwfuhSxyMYX3qpWtoB0f7PMn7PH7UtrqE3g3wZ4X1GLSii3LXHg1LNQzAkbTNbJuGMcj16V6T/wAMn/C/cv8AxbvwQPmA/wCQDZ+v/XKs/wDZb+F3jL4Y+Cmi8ZePbrxxfXaQyRPLo9vpotI/KXbHtjGWK8gknt09PUFGXX/eX+YqacU/iA+Hf+Cgf7N3w/0r40/s4x2Pgzwxp1vqXj3yb2O00q3gF3CbSaUxOUQEqWVTg8ZUHFfU0/7KHwxX5T8PfBR8ttgJ0O1bgAAfejNeG/8ABRGRU+N37MYbjd8QAP8Ayn3FfWMz75ZD/wBNX/nRTirsDzz/AIZQ+GP/AET3wT/4ILL/AONUH9k/4XsMN8PfBJ/7gFl/8ar0CituVIDz/wD4ZP8AharJj4eeCV5A/wCQBZnP/kH+fFeQ/tD+Nv2Yf2V/Fel6J468OeDdJ1LWoftVrbxeEY7yR4w21mIhtnwBX1BE+1wGyUYhWA6kEj/9f4V8L/tc/Bvx18Sf+CpPwwufB+ua54JaHwlexzeI7XR01CCA+YpEflzDylY7Rz97g9sg5ytbQD6Q8A/Ar4O/E3wPpPiDR/AXg+40rWbZLu1kk8NWsJdGAKna8IYde4BrVb9k74YSEbvh74JKqcgf2BZf/Gq67wXol94d8KafaahqcmtXtvbxW9zfvGkTXjxxqvmFEAVSeTgcDNadTTjf4twPP1/ZO+F6gj/hXvgvrnjQbL/41Qf2Tvhfx/xb3wSxByN2g2Rx/wCQq9AoxmtJR0FLY+BP+Cyf7Ofgfw1+zl4fm0Xwn4b0i5k8SRB5bPSre3d1NtdEqTGinGQDgnHA44FFdz/wWjlEX7NnhxmGf+KkgGP+3W6orlcXcuOx9QeDtaWPw1pqtGeLSHkH/plHWr/byJyFfPHYUUV0fYRNT4gbV4Uf5YnC5LD5iTjsDz2yfzpYtbjZfuPyaKKkCR9SRV439QOnqQPX3r5R0TWoYP8Agszr7eW26T4YW659NupMf13/AKUUUVt0B9WHWYyi/K/zc/nUgv1JwPMHBzhtp/MGiigCN9TWIYKsRgDrk/nTotUjZl+VvvL/ADFFFVHcD5K/4KM61FH8ev2W4mjZvO+II59P9CmT/wBmz+FfWx1FXmZVVvmd257fMR/Siipp7sAkv1iXLK34Ug1KPy921/yoorSTdgBNTjOceYDjII7UkWqA+YFMi8YXkkqO/U9+fzoorMAOqQtjbG6hMgAdOcf4Un9rx5+61FFVHcB39px+Vu2t9KVdQVnZQrcUUVrLYUtj45/4LSX6y/s1eHV2fd8Swd/+nW7ooorlluXHY//Z"
+
+    
+    doc.addImage(imgData2, "JPEG", 75, 70, 40, 45);
+
+    doc.text(30, 125, "Numa conjunção, só vamos ter um valor lógico verdadeiro, quando as proposições p e q forem verdadeiras, ");
+
+    doc.text( 30, 140, "Exemplo:");
+    doc.text( 30, 150, "a) Vou para a escola e vou estudar matemática. P: p e q");
+    doc.text( 30, 160, "Nesse exemplo, tu tá afirmando que vai pra escola e vai estudar matemática. ‘Vou para a escola” é a ");
+    doc.text( 30, 165, "nossa proposição p, a letra “e” é o nosso conectivo lógico da conjunção, além disso, “vou estudar ");
+    doc.text( 30, 170, "matemática” é a nossa proposição q. Podemos representar essa proposição como P: p e q, ou ainda");
+    doc.text( 30, 175, "se preferir P: p ^ q");
+
+
+    doc.text( 30, 190, "b) P: 10 é um número par e 10 é divisível por 5. P: p e q");
+    doc.text( 30, 200, "Nesse exemplo, temos uma proposição composta P, e estamos dizendo que 10 é um numero par");
+    doc.text( 30, 205, "(algo verdadeiro, representado por p) e que 10 também é divisivel por 5 (outra verdade, reprensentada");
+    doc.text( 30, 210, "por q). Podemos representar essa proposição por P: p e q.");
+
+    doc.text( 30, 230, "c) Q: Tenho 50 centavos, vou comprar uma bala de 25 centavos e um pirulito de 25 centavos. Q: r e s");
+    doc.text( 30, 240, "Nesse exemplo, temos uma proposição Q, e estamos dizendo que temos50 centavos e que vamos");
+    doc.text( 30, 245, "comprar uma bala de 25 centavos (r) e um pirulito de 25 centavos (s). Podemos representar essa");
+    doc.text( 30, 250, "proposição como Q: r e s.");
+
+    doc.addPage();
+
+    doc.text( 30, 40, "Considere a proposição: Vou trabalhar e vou para a faculdade.");
+    doc.text( 30, 50, "Onde:");
+    doc.text( 30, 60, "             • “Vou trabalhar” é a minha proposição p.");
+    doc.text( 30, 65, "             • “e” é o meu conectivo lógico da conjunção");
+    doc.text( 30, 70, "             • “vou para a faculdade” é a proposição q.");
+
+
+    doc.text( 30, 85, "Caso 1: Considerando que eu fui trabalhar e depois fui para faculdade, então eu falei a verdade, pois");
+    doc.text( 30, 90, "eu fiz as duas coisas . Note que nossa proposição p (vou trabalhar) é verdadeira, assim como nossa ");
+    doc.text( 30, 95, "proposição q (vou pra faculdade) é verdadeira. Portanto, concluimos que quando temos duas proposições,");
+    doc.text( 30, 100, "uma p e outra q, e elas são verdadeiras, vamos ter um resultado verdadeiro.");
+
+
+    doc.text( 30, 120, "Caso 2: Considerando que eu fui trabalhar (p = verdade), mas não fui para faculdade (q = falso).");
+    doc.text( 30, 125, "Isso significa que eu menti. Pois, eu disse que ia fazer as duas coisas, disse que ia trabalhar ");
+    doc.text( 30, 130, "trabalhar e ia para faculdade, mas não fiz. Assim, quando temos duas proposições p e q, e uma delas,");
+    doc.text( 30, 135, "é verdadeira mas outra é falsa, então vamos ter um resultado falso.");
+
+ 
+
+    doc.text( 30, 150, "Caso 3: Agora, considerando que eu não fui trabalhar (p = falso), mas fui para a faculdade (q = verdadeiro),");
+    doc.text( 30, 155, "isso significa que eu menti. Pois novamente, eu não fiz as duas coisas. Assim, quando temos duas proposições");
+    doc.text( 30, 160, "p e q, e uma delas é verdadeira, mas outra é falsa, então vamos ter um resultado falso");
+
+
+
+    doc.text( 30, 180, "Caso 4: Por fim, considerando que eu não fui trabalhar (p = falso) e também não fui pra faculdade (q = falso),");
+    doc.text( 30, 185, "significa que eu menti. Isso porque, eu não fiz nenhuma das duas coisas. Portanto, concluímos que quando temos ");
+    doc.text( 30, 190, "temos duas proposições p e q, e as duas são falsas, temos um resultado falso."); 
+
+
+
+
+
+    //gerando o pdf
+                        
+    doc.save("Conjunção.pdf");
+}
+
+    
+    </script>
+    
+</body>
+</html>
